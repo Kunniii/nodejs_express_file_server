@@ -1,0 +1,10 @@
+html
+  head
+    link(rel='stylesheet', href='/index.css')
+  body
+    .container 
+      h1 Click to download !
+      hr
+      each data in {items}
+        each item in data 
+          a.card(href='/get/' + item.url)= item.url
