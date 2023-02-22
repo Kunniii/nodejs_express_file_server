@@ -3,19 +3,16 @@ import * as fs from "fs";
 
 const folder = "./files/";
 
-let files = fs.readdirSync(folder);
-let items = [];
-for (let path of files) {
-  items.push({ url: path });
-}
-
-console.log(files);
-
 const app = express();
 
 app.set("view engine", "pug");
 app.use(express.static("public"));
 app.get("/", (req, res) => {
+  let files = fs.readdirSync(folder);
+  let items = [];
+  for (let path of files) {
+    items.push({ url: path });
+  }
   if (files.length > 0) {
     res.render("index", {
       items,
