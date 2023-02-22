@@ -33,6 +33,9 @@ a {
   margin-left: auto;
   margin-right: auto;
   transition-duration: 200ms;
+  white-space: nowrap;                     
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card:hover {
