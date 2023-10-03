@@ -3,12 +3,15 @@
 
 html {
   font-family: "Poppins";
+  background: #ffeeee;
 }
 
 a {
-  text-decoration: none;
+  padding: 10px;
   font-weight: bold;
   color: white;
+  border-radius: 9px;
+  text-decoration: none;
 }
 
 .container {
@@ -23,7 +26,7 @@ a {
 .card {
   width: 50%;
   border-radius: 10px;
-  background: #288578;
+  background: #393949;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1rem;
@@ -32,14 +35,62 @@ a {
   margin-bottom: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  transition-duration: 200ms;
-  white-space: nowrap;                     
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.card:hover {
-  background: #009973;
-  scale: 1.2;
+a:hover,
+button:hover {
+  background: #288578;
+  scale: 1.1;
   transition-duration: 200ms;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 9px;
+  font-size: 16px;
+  background: transparent;
+  font-family: "Poppins";
+}
+
+[id^="qr-code-"] {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background: white;
+}
+
+.item {
+  border-radius: 15px;
+  border: #009973 solid 2;
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p,
+h2 {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
