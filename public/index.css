@@ -9,6 +9,7 @@ html {
 a {
   padding: 10px;
   font-weight: bold;
+  background: #313161;
   color: white;
   border-radius: 9px;
   text-decoration: none;
@@ -26,7 +27,7 @@ a {
 .card {
   width: 50%;
   border-radius: 10px;
-  background: #393949;
+  background: #4b4b74;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1rem;
@@ -42,7 +43,6 @@ a {
 
 a:hover,
 button:hover {
-  background: #288578;
   scale: 1.1;
   transition-duration: 200ms;
   transition-duration: 100ms;
@@ -58,6 +58,9 @@ button {
   font-size: 16px;
   background: transparent;
   font-family: "Poppins";
+  padding-left: 20px;
+  background: #313161;
+  padding-right: 20px;
 }
 
 [id^="qr-code-"] {
